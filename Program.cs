@@ -4,19 +4,19 @@ using System.Linq;
 
 class Program
 {
+/*
+ * Summary:
+ * This program when given a list of integers and a target value will output any pairs that can be added together to 
+ * result in the target value without using the same value twice, unless the number has been added twice into the list.
+ * Does with one single pass of the list. O(n) 
+ */
     public static void writeSum(int a, int b, int target)
     {
         Console.Write("{0} + {1} = {2}\n", a, b, target);
     }
+
     static void Main(string[] args)
     {
-        /*
-         * Summary:
-         * This program when given a list of integers and a target value will output any pairs that can be added together to 
-         * result in the target value without using the same value twice, unless the number has been added twice into the list.
-         * Does with one single pass of the list. O(1) 
-         */
-
         List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10 };
         int target = 16;
 
